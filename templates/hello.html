@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="./images/ico" href="./templates/images/back1.ico" width="20" heigh="20"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intoroduction</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='./style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+<body class="hello_body">
+    <h1 class="header">Welcom to Kansan's Home Page!</h1>
+    <hr color="black">
+    <img src="./templates/images/back1.jpg" width="200" height="250"><br>
+    <div class="explain_title">About myself</div>
+    <div class="explain">
+        Hi I'm Kansan! I'm university student in Fuk now!<br>
+        My hobby is watching baseball games and take photo! Please check <b><a href="/photo">here!!</a></b><br>
+        I don't like English!! So,do not except so much!!!<br>
+        If you want to see my tech,Click <b><a href="/deliverables">here!!</a></b><br>
+        <b><a href="/questionnaire">アンケートページはこちらから!</a></b><br>
+    </div><br>
+    <hr color="black">
+    <div class="contact">
+    Contact  SNS
+    </div>
+    <a href="mailto:2011140063k@ed.fuk.kindai.ac.jp"><img src="./templates/images/gmai.jpg" alt="Gmail" width="60" height="50"></a>
+    <a href="https://github.com/kansan-kansan"><img src="./templates/images/Git.png" alt="github" width="90" height="50"></a>
+    <a href="https://twitter.com/a_kansan_kansan"><img src="./templates/images/twitter_logo.png" alt="Twitter" width="60" height="60"></a>
+    <hr color="black">
+    <footer>
+        <time id="modify"></time>
+        <script>
+            /* 更新日の取得 */
+            const last = new Date(document.lastModified);
+            const year = last.getFullYear();
+            const month = last.getMonth() + 1;
+            const date = last.getDate();
+            /* 日付を書き換える  */
+            const target = document.getElementById('modify');
+            target.textContent = '更新日時'+year + '-' + month + '-' + date; 
+        </script>
+        <div class="footer">
+        *2022 Kanzawa
+        </div>
+    </footer>
+</body>
+</html>

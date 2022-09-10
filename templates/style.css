@@ -1,0 +1,112 @@
+/*hello.html*/
+.hello_body{
+   background: rgb(255, 242, 172);
+   text-align: center;
+}
+.header{
+   font-family: 'Splash', cursive;
+   font-family: 'Yellowtail', cursive;
+}
+.explain_title{      /*説明*/
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 10px;    
+    font-family: 'Caveat', cursive;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Shadows Into Light', cursive;
+}
+.explain{
+   padding: 10px;
+}
+
+.contact{/*コンタクト　SNS*/
+   font-size: x-large;
+   font-weight: bold;
+   margin-bottom: 10px;    
+   font-family: 'Caveat', cursive;
+   font-family: 'Kaushan Script', cursive;
+   font-family: 'Shadows Into Light', cursive;
+}
+.footer{    /*フッター*/
+   font-family: 'Shadows Into Light', cursive;
+}
+
+/*deliverables.html*/
+.del_body{
+   background: rgb(255, 242, 172);
+}
+.del_first_letter{
+   font-family: 'Splash', cursive;
+   font-family: 'Yellowtail', cursive;    
+}
+.del_container{
+   display: flex;
+   justify-content: space-around;
+}
+.del_item{
+   background: rgb(55, 172, 137);
+   color: rgb(0, 0, 0);
+
+   padding: 10px;
+}
+.dev{
+   border-collapse:collapse;
+   text-align: center;
+}
+.comapny{
+   margin-left: auto;
+   text-align: center;
+}
+.lug{
+   border-collapse:collapse;
+   text-align: center;
+}
+.qua{
+   border-collapse:collapse;
+   text-align: center;
+}
+.del_footer{
+   font-family: 'Shadows Into Light', cursive;
+   text-align: center;
+}
+/*photo.html*/
+/* 共通部分------------------------------- */
+a {
+   text-decoration: none;
+}
+img {
+   max-width: 100%;
+}
+.wrapper {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 0 4%;
+}
+/* MENU------------------------------- */
+.menu-content p {
+   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+   font-size: 1.125rem;
+   margin: 10px 0 0;
+}
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+.item_mov{
+   margin: 0 auto;
+   padding: 0 4%;
+   max-width: 50%;
+}
+.pho_body{
+   background: rgb(255, 242, 172);
+}
+.photo_footer{
+   font-family: 'Shadows Into Light', cursive;
+   text-align: center;
+}
+.qes-body{
+   background: rgb(255, 242, 172);
+}

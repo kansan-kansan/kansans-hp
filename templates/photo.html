@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="./images/ico" href="./templates/images/back1.ico" width="20" heigh="20"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photos</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='./style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kaushan+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body class="pho_body">
+    <h1 class="del_first_letter">My Media!</h1>
+    <div class="del_container">
+      <a href="/hello" class="del_item">初期ページへ</a>
+      <a href="/deliverables" class="del_item">技術ページへ</a>
+      <a href="/questionnaire" class="del_item">アンケートページへ</a>
+    </div>
+    <div class="wrapper grid">
+      <div class="item">
+        <img src="./templates/images/kiyomizu6.jpg">
+        <p>京都　清水寺</p>
+      </div>
+      <div class="item">
+        <img src="./templates/images/kamogawa.jpg">
+        <p>京都　鴨川の風景</p>
+      </div>
+      <div class="item">
+        <img src="./templates/images/gosyo3.jpg">
+        <p>京都御所の正面も写真</p>
+      </div>
+      <div class="item">
+        <img src="./templates/images/sikanosima.jpg">
+        <p>福岡県福岡市志賀島ドック</p>
+      </div>
+      <div class="item">
+        <img src="./templates/images/mozi1.jpg">
+        <p>福岡県北九州市門司港駅</p>
+      </div>
+      <div class="item">
+        <img src="./templates/images/mozi2.jpg">
+        <p>福岡県北九州市門司港駅</p>
+      </div>
+    </div>
+      <div class="item_mov">
+        <video controls src="./templates/images/kiyomizu.mp4" width="350" height="350"></video>
+        <p>清水寺動画</p>
+      </div>
+    <hr color="black">
+    <footer class="photo_footer">
+        *2022 Kanzawa
+    </footer>
+</body>
+</html>
