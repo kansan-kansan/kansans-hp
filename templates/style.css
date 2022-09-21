@@ -33,6 +33,7 @@
 
 /*deliverables.html*/
 .del_body{
+   text-align: left;
    background: rgb(255, 242, 172);
 }
 .del_first_letter{
@@ -46,7 +47,6 @@
 .del_item{
    background: rgb(55, 172, 137);
    color: rgb(0, 0, 0);
-
    padding: 10px;
 }
 .dev{
@@ -70,7 +70,6 @@
    text-align: center;
 }
 /*photo.html*/
-/* 共通部分------------------------------- */
 a {
    text-decoration: none;
 }
@@ -82,7 +81,6 @@ img {
    margin: 0 auto;
    padding: 0 4%;
 }
-/* MENU------------------------------- */
 .menu-content p {
    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
    font-size: 1.125rem;
