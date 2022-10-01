@@ -35,20 +35,20 @@
     <a href="https://twitter.com/a_kansan_kansan"><img src="./templates/images/twitter_logo.png" alt="Twitter" width="60" height="60"></a>
     <hr color="black">
     <footer>
-        <time id="modify"></time>
-        <script>
-            /* 更新日の取得 */
-            const last = new Date(document.lastModified);
-            const year = last.getFullYear();
-            const month = last.getMonth() + 1;
-            const date = last.getDate();
-            /* 日付を書き換える  */
-            const target = document.getElementById('modify');
-            target.textContent = '更新日時'+year + '-' + month + '-' + date; 
-        </script>
-        <div class="footer">
-        *2022 Kanzawa
-        </div>
+      <time id="modify"></time>
+      <!--<script>
+           更新日の取得 
+          const last = new Date(document.lastModified);
+          const year = last.getFullYear();
+          const month = last.getMonth() + 1;
+          const date = last.getDate();
+          /* 日付を書き換える  */
+          const target = document.getElementById('modify');
+          target.textContent = '更新日時'+year + '-' + month + '-' + date; 
+      </script>-->
+      <div class="footer">
+      *2022 Kanzawa
+      </div>
     </footer>
 </body>
 </html>
