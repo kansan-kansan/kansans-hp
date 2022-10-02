@@ -36,16 +36,23 @@
     <hr color="black">
     <footer>
         <time id="modify"></time>
-        <script>
-            /* 更新日の取得 */
-            const last = new Date(document.lastModified);
-            const year = last.getFullYear();
-            const month = last.getMonth() + 1;
-            const date = last.getDate();
-            /* 日付を書き換える  */
-            const target = document.getElementById('modify');
-            target.textContent = '更新日時'+year + '-' + month + '-' + date; 
-        </script>
+        <script type="text/javascript">
+            var now = new Date();
+            var Y = now.getFullYear();
+            var M = now.getMonth() + 1;
+            var D = now.getDate();
+            var W = now.getDay();
+            var DotW = ['日', '月', '火', '水', '木', '金', '土'];
+            var h = now.getHours();
+            var m = now.getMinutes();
+            var s = now.getSeconds();
+            document.getElementById('ShowDateAll').innerHTML = Y + '年' + M + '月' + D + '日' + '(' + DotW[W] + ')' + h + '時' + m + '分' + s + '秒';//2020年7月7日（金）1時23分45秒
+            document.getElementById('ShowDateY').innerHTML = Y + '年';//2020年
+            document.getElementById('ShowDateYM').innerHTML = Y + '年' + M + '月';//2020年7月
+            document.getElementById('ShowDateYMD').innerHTML = Y + '年' + M + '月' + D + '日';//2020年7月7日
+            document.getElementById('ShowDateYMDW').innerHTML = Y + '年' + M + '月' + D + '日' + '(' + DotW[W] + ')';//2020年7月7日（金）
+          </script>
+
         <div class="footer">
         *2022 Kanzawa
         </div>
