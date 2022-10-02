@@ -28,7 +28,7 @@ def questionnaire():
 
 @app.route("/authorized")
 def authorized():
-    render_template('authorized.html')
+    return render_template('authorized.html')
 
 if __name__=="__main__":
     app.run(debug=True)
