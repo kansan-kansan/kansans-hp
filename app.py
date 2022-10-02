@@ -26,5 +26,9 @@ def photo():
 def questionnaire():
     return render_template('questionnaire.html')
 
+@app.route("/authorized")
+def authorized():
+    render_template('authorized.html')
+
 if __name__=="__main__":
     app.run(debug=True)
