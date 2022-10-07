@@ -26,7 +26,7 @@ def questionnaire():
 
 
 @app.route("/login",methods=['GET', 'POST'])
-def authorized():
+def login():
     """
     #if reqest.method == "POST":     値が入れば 
     
