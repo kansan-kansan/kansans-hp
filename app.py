@@ -1,7 +1,5 @@
 #https://flask.palletsprojects.com/en/2.0.x/quickstart/
-
-from click import style
-from flask import Flask
+from flask import Flask,Response
 from flask import render_template
 app = Flask(__name__, static_folder='./templates')#アプリのインスタンス化
 
@@ -26,9 +24,17 @@ def photo():
 def questionnaire():
     return render_template('questionnaire.html')
 
-@app.route("/authorized")
+
+@app.route("/login",methods=['GET', 'POST'])
 def authorized():
-    return render_template('authorized.html')
+    """
+    #if reqest.method == "POST":     値が入れば 
+    
+    #else
+    #    return render_template('authorized.html')
+    #322d353ad59f8a760ad94cee8bb01c26f994ebd1cd1dbbf68fe3c80018706095
+    """
+    return render_template('login.html')
 
 if __name__=="__main__":
     app.run(debug=True)
