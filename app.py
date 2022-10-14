@@ -1,6 +1,6 @@
 #https://flask.palletsprojects.com/en/2.0.x/quickstart/
-from flask import Flask, Response
-from flask import render_template
+#from flask import Flask,Response
+from flask import render_template,Flask,Response
 import time
 
 app = Flask(__name__, static_folder='./templates')#アプリのインスタンス化
@@ -52,14 +52,6 @@ def questionnaire():
         txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))
     return render_template('questionnaire.html')
 
-@app.route("/archives")
-def archives():
-    with open("./log.txt", "a",encoding='utf-8') as txt:
-        now = time.ctime()
-        cnvtime = time.strptime(now)
-        txt.write("\n\narchives.html>>")
-        txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))
-    return render_template('archives.html')
 
 @app.route("/archives")
 def archives():
@@ -69,7 +61,16 @@ def archives():
         txt.write("\n\narchives.html>>")
         txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))
     return render_template('archives.html')
-
+"""
+@app.route("/archives")
+def archives():
+    with open("./log.txt", "a",encoding='utf-8') as txt:
+        now = time.ctime()
+        cnvtime = time.strptime(now)
+        txt.write("\n\narchives.html>>")
+        txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))
+    return render_template('archives.html')
+"""
 @app.route("/login",methods=['GET', 'POST'])
 def login():
     with open("./log.txt", "a",encoding='utf-8') as txt:
