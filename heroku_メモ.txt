@@ -1,0 +1,9 @@
+https://qiita.com/HAL0210/items/17314cbbd136f2084a0d
+
+https://reasonable-code.com/heroku-plan-change/
+heroku 	有料プラン変更
+
+https://qiita.com/tomo_k09/items/c9145b522ed07fb67011
+heroku 　解約  if 記事がなければ　「heroku 解約」と検索
+*******************************************:::
+何かボタンを押すと動的にログに保存される
