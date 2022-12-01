@@ -71,7 +71,7 @@ def archives():
         txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))
     return render_template('archives.html')
 """
-@app.route("/login",methods=['GET', 'POST'])
+@app.route("/login")
 def login():
     with open("./log.txt", "a",encoding='utf-8') as txt:
         now = time.ctime()
