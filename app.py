@@ -33,7 +33,7 @@ def hello_():
         txt.write("\n\nhello.html>>")
         txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))
     return render_template('hello.html')
-
+#print("f{}回目")
 @app.route("/photo")#写真
 def photo():
     with open("./log.txt", "a",encoding='utf-8') as txt:
@@ -79,6 +79,15 @@ def login():
         txt.write("\n\nlogin.html>>")
         txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))    
     ####Flashの挿入?(間違っている or 値が入っていない)
+        
+@app.route("/research")
+def research():
+    with open("./log.txt", "a",encoding='utf-8') as txt:
+        now = time.ctime()
+        cnvtime = time.strptime(now)
+        txt.write("\n\nresearch.html>>")
+        txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))
+    return render_template('research.html')
     """
     Flash https://qiita.com/kotmats/items/fcff19ae5ea309d9fee9
     #if reqest.method == "POST":     #値が入れば 
