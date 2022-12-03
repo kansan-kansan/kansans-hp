@@ -77,9 +77,9 @@ def login():
         now = time.ctime()
         cnvtime = time.strptime(now)
         txt.write("\n\nlogin.html>>")
-        txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))    
-    ####Flashの挿入?(間違っている or 値が入っていない)
-        
+        txt.write(time.strftime("%Y/%m/%d %H:%M:%S", cnvtime))
+    return render_template('login.html')
+    ####Flashの挿入?(間違っている or 値が入っていない)        
 @app.route("/research")
 def research():
     with open("./log.txt", "a",encoding='utf-8') as txt:
