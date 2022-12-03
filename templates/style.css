@@ -37,7 +37,8 @@
 }
 .del_first_letter{
    font-family: 'Splash', cursive;
-   font-family: 'Yellowtail', cursive;  
+   font-family: 'Yellowtail', cursive;
+   padding: 20px;
 }
 .del_container{
    display: flex;
@@ -80,7 +81,7 @@ img {
    margin: 0 auto;
    padding: 0 4%;
 }
-.menu-content p {
+.p {
    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
    font-size: 1.125rem;
    margin: 10px 0 0;
@@ -107,4 +108,21 @@ img {
 .qes-body{
    background: rgb(255, 242, 172);
 }
-
+.research_txt{
+	margin-top: 10px;
+	/*line-height: 1.6em;*/
+}
+.research_img{
+   float: left;
+	margin: 5px;
+}
+.research_explain{
+   margin: auto,auto,auto,40px;
+}
+/*
+.research_fig_img{
+	max-width: 100%;
+}*/
+.float_none {
+	clear: both;
+}
