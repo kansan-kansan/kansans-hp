@@ -1,7 +1,9 @@
 #https://flask.palletsprojects.com/en/2.0.x/quickstart/
 #from flask import Flask,Response
 from flask import render_template,Flask,Response
+from flask_sqlalchemy import SQLAlchemy
 import time
+
 
 app = Flask(__name__, static_folder='./templates')#アプリのインスタンス化
 
@@ -106,9 +108,9 @@ def research():
         #flash("ユーザー名または、パスワードが違います。")
     #    return render_template('login.html')
     #322d353ad59f8a760ad94cee8bb01c26f994ebd1cd1dbbf68fe3c80018706095
-    """
+    
     return render_template('login.html')
-
+"""
 """
 ##ログイン後
 @app.route("/management")
